@@ -1,0 +1,92 @@
+{
+	"id": "9bd76020-81e7-4910-8cb4-a4efab218271",
+	"name": "Bootcamp collection",
+	"timestamp": "2022-04-14T18:39:24.361Z",
+	"collection_id": "20483669-234770ac-65da-4694-ab5e-e9c35e15115c",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "f8aa2bae-fba5-466b-91e7-03f8d13bb03c",
+			"name": "My first API Request",
+			"url": "http://httpbin.org/get?p1=testing%20&p2=bootcamp",
+			"time": 217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5d63eecc-7bc5-4233-91e0-a87f7286b82a",
+			"name": "My first post request",
+			"url": "http://httpbin.org/post",
+			"time": 197,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				197
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 414,
+	"collection": {
+		"requests": [
+			{
+				"id": "f8aa2bae-fba5-466b-91e7-03f8d13bb03c",
+				"method": "GET"
+			},
+			{
+				"id": "5d63eecc-7bc5-4233-91e0-a87f7286b82a",
+				"method": "POST"
+			}
+		]
+	}
+}
