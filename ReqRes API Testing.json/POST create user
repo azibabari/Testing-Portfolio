@@ -7,3 +7,10 @@ pm.test("Response time is less than 1000ms", function () {
 });
 
 pm.environment.set("number", parseInt(Math.random()*10000));
+
+
+BODY
+
+{
+	"email" : "tarekroshdy@outlook.com"
+}
