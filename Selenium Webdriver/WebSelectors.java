@@ -8,7 +8,8 @@ public class WebSelectors {
     public static void main(String [] args) throws InterruptedException{
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com/login");
+        driver.get("https://the-internet.herokuapp.com");
+        driver.findElement(By.linkText("Form Authentication")).click();
         driver.findElement(By.id("username")).sendKeys("tomsmith");
         driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
         driver.findElement(By.className("radius")). click();
