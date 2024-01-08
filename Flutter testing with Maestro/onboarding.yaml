@@ -1,0 +1,78 @@
+appId: com.circle.mobile
+--- 
+- launchApp
+- assertVisible: "One app\nfor all your\nfinancial\nwellness \nneeds.\nSave, Stocks,\
+    \ Invest & Insure.\_"
+- tapOn:
+    point: 87%,91%
+- assertVisible: "Stocks\nInvest in your future with \nautomatic monthly stocks purhcase. "
+- tapOn:
+    point: 13%,91%
+- tapOn:
+    point: 87%,91%
+- tapOn:
+    point: 87%,91%
+- assertVisible: "Savings\nAutomatic savings plans to reach your goals faster."
+- tapOn:
+    point: 13%,91%
+- tapOn:
+    point: 87%,91%
+- tapOn:
+    point: 87%,91%
+- assertVisible: "Insurance\nJob or health cover, automatic insurance that protects\
+    \ you and your loved ones."
+- tapOn:
+    point: 13%,91%
+- tapOn:
+    point: 87%,91%
+- tapOn:
+    point: 87%,91%
+- assertVisible: "Dollar\nInvestment\nRetain the value of your money and grow your\
+    \ wealth with confidence."
+- tapOn:
+    point: 13%,91%
+- tapOn:
+    point: 87%,91%
+- tapOn:
+    point: 87%,91%
+
+
+
+
+appId: com.circle.mobile
+--- 
+- launchApp
+- assertVisible: "One app\nfor all your\nfinancial\nwellness \nneeds.\nSave, Stocks,\
+    \ Invest & Insure.\_"
+- tapOn:
+    point: 87%,88%
+- assertVisible: "Stocks\nInvest in your future with \nautomatic monthly stocks purhcase. "
+- tapOn:
+    point: 13%,88%
+- tapOn:
+    point: 87%,88%
+- tapOn:
+    point: 87%,88%
+- assertVisible: "Savings\nAutomatic savings plans to reach your goals faster."
+- tapOn:
+    point: 13%,88%
+- tapOn:
+    point: 87%,88%
+- tapOn:
+    point: 87%,88%
+- assertVisible: "Insurance\nJob or health cover, automatic insurance that protects\
+    \ you and your loved ones."
+- tapOn:
+    point: 13%,88%
+- tapOn:
+    point: 87%,88%
+- tapOn:
+    point: 87%,88%
+- assertVisible: "Dollar\nInvestment\nRetain the value of your money and grow your\
+    \ wealth with confidence."
+- tapOn:
+    point: 13%,88%
+- tapOn:
+    point: 87%,88%
+- tapOn:
+    point: 87%,88%
