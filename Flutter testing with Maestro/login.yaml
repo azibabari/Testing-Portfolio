@@ -1,0 +1,20 @@
+appId: com.circle.mobile
+--- 
+- launchApp
+- assertVisible: "Start your \nwealth \nJourney now"
+- tapOn: "Register"
+- tapOn:
+    point: 9%,8%
+- tapOn: "Register"
+- tapOn: "First Name\nEnter your first name"
+- inputText: "Maestro"
+- tapOn: "Last Name\nEnter your last name"
+- inputText: "Test"
+- tapOn: "Email Address\nEnter your email address"
+- inputRandomEmail
+- tapOn: "Referral Code\nEnter referral code (optional)"
+- tapOn: "Password\nEnter your password"
+- inputText: "credpal"
+- tapOn:
+    point: 8%,81%
+- tapOn: "Create Account"
