@@ -1,0 +1,226 @@
+appId: com.appname.mobile
+--- 
+- launchApp
+- runFlow: "loginIOS.yaml" 
+- tapOn: "Savings"
+- tapOn:
+    point: "25%,31%" #Get Started #bugg
+- tapOn: "Savings" 
+- tapOn:
+    point: "27%,50%" #Goal savings
+- runFlow:
+    when:
+      visible: "My Goals"
+    commands:
+        - tapOn:
+            point: "90%,92%" #New Goal
+- runFlow:
+    when:
+      visible: "The Goal Savings account is an easy and convenient way to achieve\
+    \ interest rates to help you reach them.\_"
+    commands:
+        - tapOn: "Continue"
+- assertVisible: "Set-up a goal"
+- tapOn: "Name"
+- inputText: "Test"
+- tapOn: "Description"
+- inputRandomText
+- tapOn: "Select a Category"
+- tapOn: "Business"
+- tapOn: "Continue"
+- tapOn: "Goal Amount"
+- inputText: "1500"
+- tapOn: "Select end date"
+- swipe:  
+    start: 32%, 86% 
+    end: 32%, 91% 
+- tapOn:
+    point: "90%,70%" #done
+- tapOn: "Continue"
+- assertVisible: "Goal Savings"
+#Daily Goal savings
+- tapOn: "₦77 Daily"
+- tapOn: "Start Date\nSelect a day of the month"
+- tapOn: "Tommorow"
+- tapOn: "Continue"
+- tapOn: "Continue"
+- assertVisible: "Savings Summary"
+- assertVisible: "Start Date\nTommorow"
+- tapOn: "Continue"
+- assertVisible:
+    id: "card:com.appname.mobile:sceneID:com.appname.mobile-default" #savings successful
+- tapOn: 
+    point: "50%,94%" #Got It
+
+
+#After saving
+- assertVisible: "My Goals"
+- assertVisible: "Balance"
+- tapOn:
+    point: "50%,37%" # first Goal savings
+- assertVisible: "Test" #Goal name
+- assertVisible: "Goal Balance\n₦1,080.00\nInterest Earned\n₦0.00"
+- assertVisible: "My Progress"
+- assertVisible: "72.00% complete\n₦1,080.00\n/\n₦1,080.00" #progress
+- assertVisible: "Goal Balance\n₦116.00\nInterest Earned\n₦0.00"
+
+# Top up Goal savings
+- tapOn: "Topup Goal"
+- tapOn: "Amount In Naira (₦)\n NGN"
+- inputText: "500"
+- tapOn: "Top-up"
+- tapOn:
+    point: "75%,63%" #Fund wallet
+- assertVisible: "Amount to top-up"
+- tapOn: 
+    point: "50,20" #close add funds pop up
+- tapOn: "Continue"
+- tapOn: 
+    point: "50%,94%" #Got It
+
+#Autosave
+
+- assertVisible: "Savings Schedule\ndaily\nMy Goal\n₦1,500.00\nInterest p.a\n8%\n\
+    Days Left\n13\nStart Date\nFebruary 13 2024\nEnd Date\nFebruary 27 2024" #details
+
+#Extend savings
+- tapOn: "Extend"
+- assertVisible: "Extend Goal Amount"
+- tapOn: "₦\nAmount to save"
+- inputText: "500"
+- tapOn: "Preferred Time\nSelect a time to save"
+- tapOn: "30 days\n6% per annmum"
+- tapOn: "Continue"
+- tapOn: "Update Goal"
+#- assertVisible: "For security and safety of your funds, kindly enter your PIN"
+
+
+#Settings
+- tapOn: "Settings"
+
+
+- swipe:
+    direction: UP
+- assertNotVisible: "No transactions yet"
+
+#Break savings
+- tapOn: "Break"
+- assertVisible: "You will lose all your interest accrued and 1%  of your capital"
+- tapOn: "No, Cancel" 
+- tapOn: "Break"
+- tapOn: "Yes, Continue" 
+- assertVisible: "Break My Savings"
+- tapOn: "Reason for breaking your goal"
+- inputRandomText
+- tapOn: "Continue"
+#- assertVisible: "For security and safety of your funds, kindly enter your PIN"
+- tapOn: "•\n•\n•\n•\n•\n•"
+
+- tapOn: "Yes, Continue"
+
+
+- tapOn:
+    point: "90%,92%" #New Goal
+- assertVisible: "Set-up a goal"
+- tapOn: "Goal Name"
+- inputText: "Test"
+- tapOn: "Goal Description"
+- inputRandomText
+- tapOn: "Select a Category"
+- tapOn: "Business"
+- tapOn: "Continue"
+- tapOn: "Goal Amount"
+- inputText: "1500"
+- tapOn: "Select end date"
+- swipe:  
+    start: 32%, 86% 
+    end: 32%, 91% 
+- tapOn:
+    point: "90%,70%" #done
+- tapOn: "Continue"
+- tapOn: "Continue"
+- assertVisible: "Goal Savings"
+#Weekly Goal savings
+- tapOn: "₦808 Weekly"
+- tapOn: "Start Date\nSelect a day of the month"
+- tapOn: "Monday"
+- tapOn: "Continue"
+- tapOn: "Continue"
+- assertVisible: "Savings Summary"
+- assertVisible: "Saving Frequency\nweekly"
+- tapOn: "Continue"
+- assertVisible:
+    id: "card:com.appname.mobile:sceneID:com.appname.appname-default" #savings successful
+- tapOn: 
+    point: "50%,94%" #Got It
+
+- tapOn:
+    point: "90%,92%" #New Goal
+- assertVisible: "Set-up a goal savings\nLet us help you reach your goal"
+- tapOn: "Goal Name"
+- inputText: "Test"
+- tapOn: "Goal Description"
+- inputRandomText
+- tapOn: "Select a Category"
+- tapOn: "Business"
+- tapOn: "Continue"
+- tapOn: "Goal Amount"
+- inputText: "1500"
+- tapOn: "Select end date"
+- swipe:  
+    start: 32%, 86% 
+    end: 32%, 91% 
+- tapOn:
+    point: "90%,70%" #done
+- tapOn: "Continue"
+- tapOn: "Continue"
+- assertVisible: "Goal Savings\nFinalise your goal savings settings"
+#Save at Coveneience Goal savings
+- tapOn: "Save at your convenience"
+- tapOn: "Continue"
+- assertVisible: "Savings Summary"
+- assertVisible: "Saving Frequency\nmanual"
+- tapOn: "Continue"
+- assertVisible:
+    id: "card:com.appname.mobile:sceneID:com.appname.mobile-default" #savings successful
+- tapOn: 
+    point: "50%,94%" #Got It
+
+
+#SAFELOCK SAVINGS
+- tapOn:
+    point: "27%,50%" #Goal savings
+- runFlow:
+    when:
+      visible: "Safelock Balance"
+    commands:
+        - tapOn:
+            point: "90%,92%" #New Safelock
+- runFlow:
+    when:
+      visible: "Vault Savings help you save more money faster to achieve your dreams."
+    commands:
+        - tapOn: "Continue"
+- assertVisible: "Set-up a safelock for your money "
+- tapOn: "Amount\nAmount to Safelock"
+- inputText: "2000"
+- tapOn: "Safelock"
+- inputText: "Test 1"
+- tapOn: "Safelock Tenure\nSafelock Tenure"
+- tapOn: "15 - 30 days\n6% per annmum"
+- tapOn:
+    point: "50%,64%" #maturity date
+- swipe:  
+    start: 32%, 86% 
+    end: 32%, 91% 
+- tapOn:
+    point: "90%,70%" #done
+- tapOn: "Continue"
+- assertVisible: "Safelock Summary\nSafelock title: Test1"
+- assertVisible: "Amount to lock\n₦2,000.00"
+- tapOn: "Payout into Your\nNGN Wallet"
+- tapOn: "Continue"
+- tapOn: 
+    point: "50%,94%" #Got It
+
+#After safelock
