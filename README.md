@@ -6,6 +6,8 @@ This repository showcases my experience and skills in software testing, bug find
 
 To access a screencast showcasing my bug reporting skills with JIRA, please click the following link: [Drive Link](https://drive.google.com/drive/folders/1nc4AsFjSokdqwcSIsSOI75sAOHao-2hq?usp=sharing)
 
+Screencast of my c# project: https://drive.google.com/file/d/1aAJvww2y0aih0kOg1qmmB9VhT2hLTUXz/view?usp=drive_link 
+
 Thank you for visiting my portfolio. I look forward to discussing how my skills and experiences can contribute to your projects and team.
 
 Best regards,
