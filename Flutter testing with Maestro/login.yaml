@@ -1,4 +1,4 @@
-appId: com.circle.mobile
+appId: com.appname.mobile
 --- 
 - launchApp
 - assertVisible: "Start your \nwealth \nJourney now"
